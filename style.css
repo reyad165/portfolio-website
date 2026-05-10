@@ -81,6 +81,7 @@ nav {
   position: absolute;
   bottom: -40px;
 }
+
 /* HAMBURGER */
 .menu-toggle {
   font-size: 28px;
@@ -171,10 +172,10 @@ main hr {
 }
 
 .imge_top {
-  width: 23px;
+  width: 30px;
   position: relative;
-  top: -32px;
-  left: -9px;
+  top: -35px;
+  left: -15px;
 }
 
 .vertical_title {
@@ -190,7 +191,174 @@ main hr {
   width: 150px;
   font-size: 9px;
 }
+/*skill section end*/
+/* General Section Setup */
+.services-section {
+  background-color: #000000; /* Deep black background */
+  padding: 80px 0;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+}
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Title Styling */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.title span {
+  color: #007bff; /* Accent color (Blue) */
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Card Styling */
+.card {
+  background: #111111; /* Slightly lighter black for contrast */
+  padding: 40px 30px;
+  border-radius: 12px;
+  border: 1px solid #222222; /* Subtle border */
+  transition: all 0.4s ease;
+  cursor: default;
+}
+
+/* Hover Effect: Border Glow and Lift */
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #007bff; /* Border turns blue on hover */
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #999999; /* Muted text for better readability */
+  line-height: 1.6;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+/* Project Section Styles */
+.projects-section {
+  background-color: #000000;
+  padding: 100px 20px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.section-title span {
+  color: #007bff; /* Primary Blue Accent */
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Styling */
+.project-card {
+  background: #111111;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #222;
+  transition: all 0.4s ease;
+}
+
+.project-card:hover {
+  border-color: #007bff;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
+}
+
+/* Image Handling */
+.project-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #222; /* Placeholder color */
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.1);
+}
+
+/* Project Info */
+.project-info {
+  padding: 25px;
+}
+
+.project-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Button Styling */
+.view-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #007bff;
+  color: #fff;
+}
+/*footer section */
 footer {
   background-color: #020d48;
 }

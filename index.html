@@ -24,17 +24,17 @@
         <div class="right" id="navLinks">
           <!-- <span class="close-btn" onclick="toggleMenu()">✖</span> -->
           <ul>
-            <li><a href="" onclick="closeMenu()">Home</a></li>
-            <li><a href="" onclick="closeMenu()">About</a></li>
-            <li><a href="" onclick="closeMenu()">Services</a></li>
-            <li><a href="" onclick="closeMenu()">Projects</a></li>
-            <li><a href="" onclick="closeMenu()">Content Me</a></li>
+            <li><a href="#Home" onclick="closeMenu()">Home</a></li>
+            <li><a href="#About" onclick="closeMenu()">About</a></li>
+            <li><a href="#services" onclick="closeMenu()">Services</a></li>
+            <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Content Me</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <section class="fistsectio">
+      <section id="Home" class="fistsectio">
         <div class="leftsection">
           Hi, My name is <span class="purple">Reyad</span>
           <div>and I am a passionate</div>
@@ -51,13 +51,13 @@
         </div>
       </section>
       <hr />
-      <section class="second_Section">
-        <span class="text_gray">What I have done so far</span>
-        <h1>Work Experience</h1>
+      <section id="About" class="second_Section">
+        <span class="text_gray">What I have learned so far</span>
+        <h1>My skills</h1>
         <div class="box">
           <div class="vertical">
-            <img class="imge_top" src="imges/images.png" alt="" />
-            <div class="vertical_title">HTML,CSS Developer (2024-2026)</div>
+            <img class="imge_top" src="imges/H.C.J.png" alt="html.logo" />
+            <div class="vertical_title">HTML,CSS,javascript-(2025)</div>
             <div class="vertical_dase">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               culpa doloribus rerum ipsum fuga, corrupti blanditiis officia,
@@ -66,8 +66,8 @@
           </div>
 
           <div class="vertical">
-            <img class="imge_top" src="imges/fb.png" alt="" />
-            <div class="vertical_title">Node.js Developer (2024-2026)</div>
+            <img class="imge_top" src="imges/Node.png" alt="nodejs logo" />
+            <div class="vertical_title">Node.js(2025)</div>
             <div class="vertical_dase">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               culpa doloribus rerum ipsum fuga, corrupti blanditiis officia,
@@ -76,8 +76,8 @@
           </div>
 
           <div class="vertical">
-            <img class="imge_top" src="imges/download_1.png" alt="" />
-            <div class="vertical_title">javascript Developer (2024-2026)</div>
+            <img class="imge_top" src="imges/php.png" alt="php logo" />
+            <div class="vertical_title">php(2025)</div>
             <div class="vertical_dase">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               culpa doloribus rerum ipsum fuga, corrupti blanditiis officia,
@@ -86,20 +86,8 @@
           </div>
 
           <div class="vertical">
-            <img class="imge_top" src="imges/download.png" alt="" />
-            <div class="vertical_title">php Developer (2024-2026)</div>
-            <div class="vertical_dase">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              culpa doloribus rerum ipsum fuga, corrupti blanditiis officia,
-              minus quia omnis est, cumque quam?
-            </div>
-          </div>
-
-          <div class="vertical">
-            <img class="imge_top" src="imges/devloper.png2.png" alt="" />
-            <div class="vertical_title">
-              React,Next.js Developer (2024-2026)
-            </div>
+            <img class="imge_top" src="imges/r-n.png" alt="react logo" />
+            <div class="vertical_title">React,Next.js(2026)</div>
             <div class="vertical_dase">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               culpa doloribus rerum ipsum fuga, corrupti blanditiis officia,
@@ -108,6 +96,93 @@
           </div>
         </div>
       </section>
+
+      <section id="services" class="services-section">
+        <div class="container">
+          <h2 class="title">My <span>Services</span></h2>
+          <div class="grid">
+            <div class="card">
+              <div class="icon">🎨</div>
+              <h3>Web Design</h3>
+              <p>
+                Modern and minimalist UI/UX designs tailored for your brand.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="icon">💻</div>
+              <h3>Web Development</h3>
+              <p>
+                Clean code and high-performance websites built from scratch.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="icon">🚀</div>
+              <h3>Web Application</h3>
+              <p>
+                Full-stack web apps with complex functionality and databases.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="icon">🔍</div>
+              <h3>Google Marketing</h3>
+              <p>Search Engine Optimization (SEO) and targeted Google Ads.</p>
+            </div>
+
+            <div class="card">
+              <div class="icon">📱</div>
+              <h3>Social Media Marketing</h3>
+              <p>
+                Strategic growth and engagement across all social platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <h2 class="section-title">Latest <span>Projects</span></h2>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="project1.jpg" alt="E-commerce Web App" />
+              </div>
+              <div class="project-info">
+                <h3>E-commerce Platform</h3>
+                <p>A full-stack web application built for online retail.</p>
+                <a href="#" class="view-btn">View Project</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-img">
+                <img src="project2.jpg" alt="Business Portfolio" />
+              </div>
+              <div class="project-info">
+                <h3>Corporate Portfolio</h3>
+                <p>Modern landing page with smooth animations and SEO.</p>
+                <a href="#" class="view-btn">View Project</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-img">
+                <img src="project3.jpg" alt="Social Media Dashboard" />
+              </div>
+              <div class="project-info">
+                <h3>Admin Dashboard</h3>
+                <p>A complex web app for managing social media analytics.</p>
+                <a href="#" class="view-btn">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" class="contact">
         <h2 class="" style="text-align: center; padding-bottom: 20px">
           Contact Me

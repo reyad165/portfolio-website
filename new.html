@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      /* আপনার দেয়া ব্যাকগ্রাউন্ড কালার */
+      body {
+        background-color: #02168a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        background: #ffffff;
+        width: 100%;
+        max-width: 900px;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      /* বাম পাশ: কন্টাক্ট ইনফো */
+      .contact-info {
+        flex: 1;
+        min-width: 300px;
+        padding: 40px;
+        background: #fff;
+      }
+      .contact-info h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #333;
+      }
+      .contact-info p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+
+      .info-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .icon {
+        background: #eef2ff;
+        color: #02168a;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-right: 15px;
+      }
+      .text label {
+        display: block;
+        font-size: 12px;
+        color: #999;
+        text-transform: uppercase;
+      }
+      .text span {
+        font-weight: 600;
+        color: #333;
+      }
+
+      /* ডান পাশ: ফর্ম */
+      .contact-form {
+        flex: 1.2;
+        min-width: 300px;
+        padding: 40px;
+        background: #f8faff;
+      }
+      .contact-form h3 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-row {
+        display: flex;
+        gap: 15px;
+      }
+      .form-row div {
+        flex: 1;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        outline: none;
+        transition: 0.3s;
+      }
+      input:focus,
+      textarea:focus {
+        border-color: #02168a;
+        box-shadow: 0 0 5px rgba(2, 22, 138, 0.2);
+      }
+
+      button {
+        width: 100%;
+        padding: 14px;
+        background: #02168a;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        transition: 0.3s;
+      }
+      button:hover {
+        background: #010d63;
+      }
+
+      .success-msg {
+        color: green;
+        display: none;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contact-info">
+        <h2>Let's Work Together</h2>
+        <p>
+          I'm always open to discussing new opportunities, creative projects, or
+          potential collaborations.
+        </p>
+
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <div class="text">
+            <label>Email</label><span>mdrabiulhasan.cse@gmail.com</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <div class="text">
+            <label>Phone</label><span>+8801879408425</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="text">
+            <label>Location</label><span>Chattogram, BD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <form id="myContactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Name *</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Your full name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="your.email@example.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject *</label>
+            <input
+              type="text"
+              id="subject"
+              placeholder="What's this about?"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Message *</label>
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Tell me about your project..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" id="submitBtn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p id="status" class="success-msg">Message sent successfully!</p>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("myContactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // ১. হ্যাকিং প্রতিরোধের জন্য ইনপুট স্যানিটাইজেশন (XSS Protection)
+          function sanitize(text) {
+            const temp = document.createElement("div");
+            temp.textContent = text;
+            return temp.innerHTML;
+          }
+
+          const name = sanitize(document.getElementById("name").value);
+          const email = sanitize(document.getElementById("email").value);
+          const subject = sanitize(document.getElementById("subject").value);
+          const message = sanitize(document.getElementById("message").value);
+
+          // ২. সিম্পল ভ্যালিডেশন চেক
+          if (name === "" || email === "" || message === "") {
+            alert("Please fill all required fields!");
+            return;
+          }
+
+          // ৩. বাটন এনিমেশন
+          const btn = document.getElementById("submitBtn");
+          const status = document.getElementById("status");
+          btn.innerHTML = "Sending...";
+          btn.disabled = true;
+
+          // ৪. মেসেজ পাঠানোর লজিক (এখানে আপনি EmailJS বা আপনার API ইন্টিগ্রেট করতে পারেন)
+          console.log("Form Data:", { name, email, subject, message });
+
+          setTimeout(() => {
+            btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+            btn.disabled = false;
+            status.style.display = "block";
+            document.getElementById("myContactForm").reset();
+
+            setTimeout(() => {
+              status.style.display = "none";
+            }, 3000);
+          }, 1500);
+        });
+    </script>
+  </body>
+</html>

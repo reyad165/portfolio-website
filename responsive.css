@@ -1,26 +1,24 @@
 /* 📱 Mobile Responsive */
 @media (max-width: 768px) {
-
- .leftsection .buttons {
+  .leftsection .buttons {
     display: grid;
     /* position: absolute; */
     margin: 30px 90px;
-}
+  }
 
-.rightsection img {
+  .rightsection img {
     width: 95%;
-}
+  }
 
-
-.fistsectio > div {
+  .fistsectio > div {
     width: 90%;
     padding: 10px;
-}
-.menu-toggle{
-        display:block;
-    }
+  }
+  .menu-toggle {
+    display: block;
+  }
 
- .right {
+  .right {
     position: absolute;
     top: 88px;
     right: 80px;
@@ -30,30 +28,31 @@
     border-radius: 10px;
     display: none;
     font-size: 25px;
-}
+  }
 
-    .right ul{
-        flex-direction:column;
-        gap:10px;
-    }
+  .right ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .right.active{
-        display:block;
-    }
-    .close-btn.active{
-        display: block;
-    }
-    .close-btn{
-    font-size:22px;
-    cursor:pointer;
-    color:white;
-    display:block;
-    text-align:right;
-    margin-bottom:-24px;
+  .right.active {
+    display: block;
+  }
+  .close-btn.active {
+    display: block;
+  }
+  .close-btn {
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    text-align: right;
+    margin-bottom: -24px;
     display: none;
-}
-
-
+  }
+  .button-icon {
+    display: none;
+  }
   /* First Section */
   .fistsectio {
     flex-direction: column;
@@ -117,19 +116,23 @@
     width: 100%;
     margin-bottom: 20px;
   }
+  /* Responsive adjustment for small screens */
+  @media (max-width: 600px) {
+    .title {
+      font-size: 2rem;
+    }
+  }
 
   /* Contact */
   .contact-form {
     width: 90%;
   }
 
-  .leftsection .buttons{
+  .leftsection .buttons {
     display: grid;
   }
-  .leftsection .outline{
-   margin-top: 20px;
-   margin-bottom: 30px;
+  .leftsection .outline {
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
-
 }
-

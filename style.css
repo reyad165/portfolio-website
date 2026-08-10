@@ -4,6 +4,7 @@
 }
 
 body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(0, 0, 33);
   color: white;
@@ -188,6 +189,7 @@ main hr {
   position: relative;
   top: 75px;
   width: 150px;
+  color: #49abec;
 }
 
 .vertical_dase {
@@ -262,13 +264,6 @@ main hr {
   font-size: 0.95rem;
   color: #999999; /* Muted text for better readability */
   line-height: 1.6;
-}
-
-/* Responsive adjustment for small screens */
-@media (max-width: 600px) {
-  .title {
-    font-size: 2rem;
-  }
 }
 
 /* Project Section Styles */
